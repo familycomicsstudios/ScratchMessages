@@ -9,8 +9,8 @@
     <button onclick='done()'>Check</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+      var MESSAGE_COUNT = "waiting..."
       function done() {
-        var MESSAGE_COUNT = "waiting..."
         fetch("https://api-9gr.vercel.app/scratch/messages/Chiroyce")
    .then(res => res.json())
    .then(res => {
