@@ -11,7 +11,7 @@
     <script>
       var MESSAGE_COUNT = "waiting, click check again in a few seconds";
       function done() {
-        fetch(concat("https://api-9gr.vercel.app/scratch/messages/",$("#user").val();)
+        fetch(concat("https://api-9gr.vercel.app/scratch/messages/",$("#user").val()))
    .then(res => res.json())
    .then(res => {
       window.MESSAGE_COUNT = res // in other scripts, use MESSAGE_COUNT to address the message count.
