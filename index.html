@@ -9,9 +9,9 @@
     <button onclick='done()'>Check</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-      var MESSAGE_COUNT = "waiting..."
+      var MESSAGE_COUNT = "waiting, click check again in a few seconds"
       function done() {
-        fetch("https://api-9gr.vercel.app/scratch/messages/Chiroyce")
+        fetch(concat("https://api-9gr.vercel.app/scratch/messages/",$("#user").val();)
    .then(res => res.json())
    .then(res => {
       window.MESSAGE_COUNT = res // in other scripts, use MESSAGE_COUNT to address the message count.
