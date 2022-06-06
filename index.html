@@ -10,13 +10,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       function done() {
-        var MESSAGE_COUNT = "yo"
+        var MESSAGE_COUNT = "waiting..."
         fetch("https://api-9gr.vercel.app/scratch/messages/Chiroyce")
    .then(res => res.json())
    .then(res => {
       window.MESSAGE_COUNT = res // in other scripts, use MESSAGE_COUNT to address the message count.
    })
-        $('#yeet').text("Me");
+        $('#yeet').text(MESSAGE_COUNT);
         console.log(MESSAGE_COUNT);
       }
     </script>
